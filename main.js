@@ -26,17 +26,25 @@ client.on("messageCreate", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const comando = args.shift().toLowerCase();
 
-
-
 });
 
 let damage;
 let life;
 const cardCollection = {
+
     archerCard: {
         damage: 10,
         life: 10,
+        description: "Atira flechas em seus inimigos.",
+        imageURL: "https://media.discordapp.net/attachments/829414786311258162/930235268043251763/carta_1.png"
+    },
+    slaCard: {
+        damage: 5,
+        life: 20,
+        description: "O cara é muito louco e dá porrada!",
+        imageURL: "https://media.discordapp.net/attachments/829414786311258162/922665762060124190/BeKalletp2.jpg?width=676&height=676"
     }
+
     
 }
 
